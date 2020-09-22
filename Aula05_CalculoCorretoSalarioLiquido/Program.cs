@@ -95,40 +95,19 @@ namespace Aula05_CalculoCorretoSalarioLiquido
 
 
 
-            
-            
-            
-           /* if (salario_bruto >= 1045.00)
-            {
-                primeira_faixa = 1045.00 * 0.075;
-            } */           
-            Console.WriteLine("Valor da primeira faixa 7.5%: " + primeira_faixa);
 
 
 
-            // Calculando a segunda faixa R$ 3000
-            /*if(salario_bruto > 1045.00 && salario_bruto <= 2089.60)
-            {
-                segunda_faixa = (salario_bruto - 1045.00) * 0.09;
-            }*/
 
-            Console.WriteLine("Valor da segunda faixa 9%: " + segunda_faixa);
-
-
-            // Calculando a terceira faixa
-            /*if (salario_bruto >= 2086.61 && salario_bruto <= 3134.40)
-            {
-                terceira_faixa = (salario_bruto - 2089.60) * 0.12;
-            }*/
-
-            Console.WriteLine("Valor da terceira faixa 12%: " + terceira_faixa);
-
-            Console.WriteLine("Valor da quarta faixa 14%: " + quarta_faixa);
+            Console.WriteLine("Valor da primeira faixa 7.5%  : " + primeira_faixa.ToString("0.00") );
+            Console.WriteLine("Valor da segunda faixa    9%  : " + segunda_faixa.ToString("0.00") );
+            Console.WriteLine("Valor da terceira faixa  12%  : " + terceira_faixa.ToString("0.00") );
+            Console.WriteLine("Valor da quarta faixa    14%  : " + quarta_faixa.ToString("0.00") );
 
 
             double total_inss = primeira_faixa + segunda_faixa + terceira_faixa + quarta_faixa;
 
-            Console.WriteLine("Total de INSS = " + total_inss);
+            Console.WriteLine("Total de INSS = " + total_inss.ToString("0.00") );
 
 
 
